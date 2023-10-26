@@ -77,6 +77,18 @@ button {
     align-items: center;
     justify-content: center;
 }
+.icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    max-width: 80%;
+    max-height: 80%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
 .summary h1 {
     border-bottom: 1px solid black;
 }
