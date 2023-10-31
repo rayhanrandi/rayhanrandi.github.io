@@ -35,7 +35,7 @@ function nextCarousel() {
 }
 function prevCarousel() {
     if (currentSectionIndex == 0) {
-        currentSectionIndex = sections.length - 1;
+currentSectionIndex = sections.length - 1;
     } else {
         currentSectionIndex--;
     }
@@ -53,7 +53,6 @@ init();
 // Event listeners for navigation buttons
 document.querySelector('#carousel-shuffle-right').addEventListener('click', () => nextCarousel());
 document.querySelector('#carousel-shuffle-left').addEventListener('click', () => prevCarousel());
-
 document.querySelector('#about-button').addEventListener('click', () => navigateCarousel(0));
 document.querySelector('#experience-button').addEventListener('click', () => navigateCarousel(1));
 document.querySelector('#technical-skills-button').addEventListener('click', () => navigateCarousel(2));
