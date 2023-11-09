@@ -104,22 +104,27 @@ h3 {
     margin-top: 0.1rem;
 }
 
-.exp {
+.exp, .project {
     display: flex;
     flex-direction: column;
 }
-.exp-heading {
+.exp-heading, .project-heading {
     flex: 1;
     display: flex;
     flex-direction: row;
 }
-.exp-title, .exp-place {
+.exp-title, .exp-place,
+.project-title, .project-tools {
     flex: 1;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
-.exp-time {
+.exp-heading-info, .project-heading-info {
+    min-width: 75%;
+}
+.exp-time, .project-time {
     flex: 1;
+    min-width: 25%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
