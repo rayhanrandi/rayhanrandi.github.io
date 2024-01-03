@@ -73,7 +73,7 @@ h3 {
     margin-top: 0.1rem;
 }
 
-.about, .experience, .technical-skills, .projects, .volunteers {
+.about, .experience, .technical-skills, .projects, .misc {
     padding: 3%;
     height: 90%;
     display: none;

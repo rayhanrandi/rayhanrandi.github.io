@@ -1,5 +1,5 @@
 // Main page logic
-const sections = ['about', 'experience', 'technical-skills', 'projects', 'volunteers'];
+const sections = ['about', 'experience', 'technical-skills', 'projects', 'misc'];
 var currentSectionIndex = 0;
 
 function init() {
@@ -58,5 +58,5 @@ document.querySelector('#about-button').addEventListener('click', () => navigate
 document.querySelector('#experience-button').addEventListener('click', () => navigateCarousel(1));
 document.querySelector('#technical-skills-button').addEventListener('click', () => navigateCarousel(2));
 document.querySelector('#projects-button').addEventListener('click', () => navigateCarousel(3));
-document.querySelector('#volunteers-button').addEventListener('click', () => navigateCarousel(4));
+document.querySelector('#misc-button').addEventListener('click', () => navigateCarousel(4));
 
