@@ -10,16 +10,19 @@
     <script src="static/js/index.js" defer></script>
 </head>
 
-<nav class="navbar">
-    <a id="about-button">About</a>
-    <a id="experience-button">Experience</a>
-    <a id="technical-skills-button">Technical Skills</a>
-    <a id="projects-button">Projects</a>
-    <a id="misc-button">Miscellaneous</a>
-</nav>
 
 <body>
-    <div class="content">
+    <header>
+        <nav class="navbar">
+            <button id="about-button">About</button>
+            <button id="experience-button">Experience</button>
+            <button id="technical-skills-button">Technical Skills</button>
+            <button id="projects-button">Projects</button>
+            <button id="misc-button">Miscellaneous</button>
+        </nav>
+    </header>
+
+    <main class="content">
         <div class="carousel-shuffle" id="carousel-shuffle-left">
             <
         </div>
@@ -27,9 +30,11 @@
         <div class="section">
             <div class="about">
                 <div class="summary">
-                    <h1 class="section-title">Rayhan Putra Randi</h1>
+                    <header>
+                        <h1 class="section-title">Rayhan Putra Randi</h1>
+                    </header>
                     <div class="summary-content">
-                        <div class="about-education">
+                        <article class="about-education">
                             <ul>
                                 <li>Current occupation: 
                                     <ul>
@@ -51,40 +56,42 @@
                                 </li>
                                 <br>
                             </ul>
-                        </div>
-                        <div style="display: none;" class="about-summary">
+                        </article>
+                        <article style="display: none;" class="about-summary">
                             <h3>About me</h3>
-                            Hello! I'm Randi. I do back-end development and like getting 
+                            Hello! I'm Randi. I like doing back-end development and getting 
                             my hands dirty configuring the operational side of things of 
                             whatever it is I'm developing. I'm also interested in cloud 
                             computing/reliability engineering and things automation can do 
                             to help scale and speed up development.
-                        </div>
-                        <div class="about-contacts">
+                        </article>
+                        <artilce class="about-contacts">
                             <h3>Contacts</h3>
                             <ul class="about-contact-list">
                                 <li><a href="mailto:rayhanrandi10@gmail.com">Email</a></li>
                                 <li><a href="https://www.linkedin.com/in/rayhanrandi/" target="_blank">LinkedIn</a></li>
                             </ul>
-                        </div>
-                        <div class="about-links">
+                        </article>
+                        <article class="about-links">
                             <h3>Links</h3>
                             <ul class="about-links-list">
                                 <li><a href="https://github.com/rayhanrandi/" target="_blank">GitHub</a></li>
                                 <li><a href="./static/files/CV Rayhan Putra Randi.pdf" download="CV Rayhan Putra Randi.pdf" target="_blank">CV</a></li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
                 </div>
-                <div class="icon">
+                <aside class="icon">
                     <img src="static/images/favicon.png" alt="smile">
-                </div>
+                </aside>
             </div>
             <div class="experience">
                 <div class="summary">
-                    <h1 class="section-title">Experience</h1>
+                    <header>
+                        <h1 class="section-title">Experience</h1>
+                    </header>
                     <div class="summary-content">
-                        <div class="exp">
+                        <article class="exp">
                             <div class="exp-heading">
                                 <div class="exp-heading-info">
                                     <h3 class="exp-title">Software Engineer Intern</h3>
@@ -98,13 +105,16 @@
                                 <ul>
                                     <li>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, commodi animi? Dolorem provident repellat, similique natus repudiandae necessitatibus iste a ratione itaque sequi iure minima quia consectetur laborum vel vitae.
+                                            Worked with application development team on chatbot service MVP based on Python's
+                                            spacy library and FastAPI's backend framework services. Spearheaded omnichannel
+                                            integrations through Qiscus by developing postback logics for consuming data
+                                            from RabbitMQ based message queues.
                                         </p>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="exp">
+                        </article>
+                        <article class="exp">
                             <div class="exp-heading">
                                 <div class="exp-heading-info">
                                     <h3 class="exp-title">Teaching Assistant for Advanced Programming</h3>
@@ -125,8 +135,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="exp">
+                        </article>
+                        <article class="exp">
                             <div class="exp-heading">
                                 <div class="exp-heading-info">
                                     <h3 class="exp-title">Teaching Assistant for Platform Based Programming</h3>
@@ -148,58 +158,88 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
             <div class="technical-skills">
                 <div class="summary">
-                    <h1 class="section-title">Skills</h1>
+                    <header>
+                        <h1 class="section-title">Skills</h1>
+                    </header>
                     <div class="summary-content skills">
-                        <div class="languages">
-                            <div class="languages-heading">
-                                <div class="language-heading-info">
-                                    <h3 class="languages-title">Languages</h3>
-                                </div>
-                            </div>
-                            <div class="language-description">
-                                <ul class="language-list">
-                                    <li>Java, Python, JavaScript, Go, Dart</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tools">
-                            <div class="tools-heading">
-                                <div class="tools-heading-info">
-                                    <h3 class="tools-title">Tools</h3>
-                                </div>
-                            </div>
-                            <div class="tools-description">
-                                <ul class="tools-list">
-                                    <li>Linux, VSCode, npm, Gitlab CI/CD, Docker, GCP, PostgreSQL, Postman, SonarQube</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="frameworks-libraries">
-                            <div class="frameworks-libraries-heading">
-                                <div class="frameworks-libraries-heading-info">
-                                    <h3 class="frameworks-libraries-title">Frameworks & Libraries</h3>
-                                </div>
-                            </div>
-                            <div class="frameworks-libraries-description">
-                                <ul class="frameworks-libraries-list">
-                                    <li>Spring Boot, Django, Express, React, JUnit, Mockito, Selenium, Flutter</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <table class="skills-table">
+                            <tr> 
+                                <th>Languages</th>
+                                <th>Dev Tools</th>
+                                <th>Frameworks/Libraries</th>
+                            </tr>
+                            <tr>
+                                <td class="skills-languages"> 
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                </td>
+                                <td class="skills-tools">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                                </td>
+                                <td class="skills-frameworks">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills-languages">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                                </td>
+                                <td class="skills-tools">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+                                </td>
+                                <td class="skills-frameworks">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original-wordmark.svg" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills-languages">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                </td>
+                                <td class="skills-tools">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
+                                </td>
+                                <td class="skills-frameworks">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills-languages">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                </td>
+                                <td class="skills-tools">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" />
+                                </td>
+                                <td class="skills-frameworks">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills-languages">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" />
+                                </td>
+                                <td class="skills-tools">
+                                    <img src="./static/images/ci-cd.png" alt="GitLab CI/CD">
+                                </td>
+                                <td class="skills-frameworks">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" />
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
             <div class="projects">
                 <div class="summary">
-                    <h1 class="section-title">Projects</h1>
+                    <header>
+                        <h1 class="section-title">Projects</h1>
+                    </header>
                     <div class="summary-content">
-                        <div class="project">
+                        <article class="project">
                             <div class="project-heading">
                                 <div class="project-heading-info">
                                     <h3 class="project-title">Series Progress Tracker</h3>
@@ -220,8 +260,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="project">
+                        </article>
+                        <article class="project">
                             <div class="project-heading">
                                 <div class="project-heading-info">
                                     <h3 class="project-title">SiSehat</h3>
@@ -242,16 +282,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
             <div class="misc">
                 <div class="summary">
-                    <h1 class="section-title">Miscellaneous</h1>
+                    <header>
+                        <h1 class="section-title">Miscellaneous</h1>
+                    </header>
                     <div class="summary-content">
                         <!-- todo -->
-                        WIP.
+                        Work in progress.
                     </div>
                 </div>
             </div>
@@ -260,78 +302,11 @@
         <div class="carousel-shuffle" id="carousel-shuffle-right">
             >
         </div>
-    </div>
+    </main>
 
-    <div class="copyright">
-        <!-- todo: year = time.now.year -->
+    <footer class="copyright">
         &copy; 2024 rayhanrandi | <a href="https://github.com/rayhanrandi/" target="_blank">rayhanrandi</a>
-    </div>
-    <div class="visitor-counter copyright">
-        <span id="visit-count"></span> total visits.
-    </div>
-
-    <!-- Firebase script for visitor counter (Implemented here because project is not a node project.) -->
-    <script type="module" defer>
-        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js'
-    
-        // Add Firestore
-        import { 
-            getFirestore, serverTimestamp,
-            doc, getDoc, setDoc 
-        } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js'
-
-        // Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyA01Vuy7MI2YGMTb3Sq1HUfLI4jlTKGK98",
-            authDomain: "cloud-resume-409108.firebaseapp.com",
-            projectId: "cloud-resume-409108",
-            storageBucket: "cloud-resume-409108.appspot.com",
-            messagingSenderId: "962502151216",
-            appId: "1:962502151216:web:f2c95bedf266be7741b1f5",
-            measurementId: "G-7Z7CL7ZJVG"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        
-        // Initialize Cloud Firestore and get a reference to the service
-        const db = getFirestore(app);
-
-        // Function to handle visitor counts from firestore
-        async function handleVisitorCount(docRef) {
-            let visitorCount;
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
-                // Increment visitor count
-                visitorCount = docSnap.data().count + 1;
-                await setDoc(docRef, {
-                    count: visitorCount,
-                    timestamp: serverTimestamp()
-                });
-            } else {
-                // docSnap.data() will be undefined in this case
-                // visitor count will be initialized from 1
-                visitorCount = 1;
-                await setDoc(docRef, {
-                    count: 1,
-                    timestamp: serverTimestamp()
-                });
-                console.log("Visitor count initialized.");
-            }
-            return visitorCount;
-        }
-
-        // Get current visitor count from firestore db
-        var docRef = doc(db, "visitors", "visitor-count");
-        // Handle & display visitor count in main page
-        var visitorCount = await handleVisitorCount(docRef);
-
-        console.log(visitorCount);
-
-        document.querySelector('#visit-count').innerHTML = visitorCount;
-    </script>
-
+    </footer>
 </body>
 
 </html>
